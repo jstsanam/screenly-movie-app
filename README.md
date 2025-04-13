@@ -1,50 +1,83 @@
-# Welcome to your Expo app 👋
+# Screenly🎬
+A mobile app for movie lovers to explore, search, and save their favorite films. Built using React Native and Expo, Screenly delivers a smooth and visually engaging experience with real-time movie data and a smart popularity algorithm powered by Appwrite.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## 📋 <a name="table">Table of Contents</a>
+1. 📝 [About the Project](#about)
+2. 🔥 [Features](#features)
+3. 🛠️ [Tech Stack](#tech-stack)
+4. 📁 [Project Structure](#project-structure)
+5. ⚙️ [Installation](#installation)
+6. 🌍 [Environment Variables](#envs)
+7. 📲 [Tabs](#tabs)
+8. 📩 [Contact](#contact)
 
-## Get started
+## <a name="about">About the Project 📝</a>
+Screenly is a React Native mobile application that allows users to discover movies, search through an extensive library, and save their favorites for later viewing. It integrates real-time data fetching and a smart popularity ranking system based on user searches. With a sleek UI powered by Tailwind CSS and NativeWind, Screenly provides an immersive and scalable experience across devices.
 
-1. Install dependencies
+## <a name="features">Features 🔥</a>
+- **Real-time data:** Fetching and displaying real-time movie data
+- **Home Page:** Featured and discover movies
+- **Search Page:** Search for your favorite movies
+- **Popularity algorithm:** Track user searches to display the most searched movies
 
-   ```bash
-   npm install
-   ```
+## <a name="tech-stack">Tech Stack 🛠️</a>
+- **Mobile Framework:** React Native (Expo)
+- **Language:** TypeScript
+- **Backend & Database:** Appwrite
+- **API Integration:** TMDB API
+- **Styling:** Tailwind CSS with NativeWind
 
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+## <a name="project-structure">Project Structure 📁</a>
 ```bash
-npm run reset-project
+/app                → Main application directory  
+/assets             → Static assets like images and icons  
+/components         → Reusable UI components  
+/constants          → App-wide constants  
+/interfaces         → TypeScript interfaces for type safety  
+/services           → API and Appwrite service functions  
+/types              → Shared type definitions  
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## <a name="installation">Installation ⚙️</a>
+1. Clone the repository:
+```bash
+git clone https://github.com/jstsanam/screenly-movie-app.git
+```
+2. Navigate to the project directory:
+```bash
+cd screenly-movie-app
+```
+3. Install dependencies:
+```bash
+npm install
+```
+4. Run the application:
+```bash
+npx expo start
+```
+Scan the QR code using the Expo Go app on your mobile device.
 
-## Learn more
+## <a name="envs">Environment Variables 🌍</a>
+| Variable Name                       | Description                               | Example Value         |
+|-------------------------------------|-------------------------------------------|-----------------------|
+| EXPO_PUBLIC_MOVIE_API_KEY           | TMDB API key                              | your_tmdb_api_key     |
+| EXPO_PUBLIC_APPWRITE_PROJECT_ID     | Appwrite project ID                       | your_project_id       |
+| EXPO_PUBLIC_APPWRITE_DATABASE_ID    | Appwrite database ID                      | your_database_id      |
+| EXPO_PUBLIC_APPWRITE_COLLECTION_ID  | Appwrite collection ID                    | your_collection_id    |
 
-To learn more about developing your project with Expo, look at the following resources:
+## <a name="tabs">Tabs 📲</a>
+### 1. Home
+- Discover all available movies.
+- Trending movies highlighted at the top.
+- Tap to view full movie details.
+### 2. Search
+- Search for any movie with instant results.
+- Display list of searched movies dynamically.
+### 3. Saved
+- View your saved/bookmarked movies in one place.
+### 4. Profile
+- Manage your profile details.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## <a name="contact">Contact 📩</a>
+Sanam Yadav - [jstsanam@gmail.com](mailto:jstsanam@gmail.com)  
+GitHub: [jstsanam](https://github.com/jstsanam)
